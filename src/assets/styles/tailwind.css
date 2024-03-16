@@ -1,0 +1,27 @@
+/* @tailwind base; */
+@tailwind components;
+/* @tailwind utilities; */
+
+@layer components {
+    .card {
+        background-color: theme('colors.white');
+        border-radius: theme('borderRadius.lg');
+        padding: theme('spacing.8');
+        box-shadow: theme('boxShadow.3xl');
+        margin: theme('spacing.6');
+    }
+
+    .btn-primary {
+        @apply rounded-full bg-gradient-to-b from-[#245272] to-[#147887] text-white p-2 px-4 flex items-center;
+    }
+
+    .btn-theme {
+        @apply rounded-lg text-white p-2 px-4 bg-gradient-to-r from-[#07869B] to-[#0361AD];
+    }
+
+    p {
+        @apply text-sm
+    }
+
+    /* ... */
+}
